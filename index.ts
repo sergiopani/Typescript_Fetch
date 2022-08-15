@@ -44,6 +44,29 @@ const profile = {
 
 const { age }: {age:number} = profile;
 
-const {coords: {lat, lng}} = profile;
+const {coords: {lat, lng}}  = profile;
+
+//Array containing nothing but strings
+const carMaker: string[] = ['ford', 'toyota', 'chevy'];
+
+const dates = [new Date(), new Date()];
+
+const carsByMake: string [][] = [
+    ['f150'],
+    ['corolla'],
+    ['camaro']
+];
+
+//Tuples
+const drink: {color:string,carbonated:boolean,sugar:number} = {
+    color: 'brown',
+    carbonated: true,
+    sugar: 40
+}
+
+type Drink = [string,boolean,number];
+
+let pepsi: Drink;
+
 
 

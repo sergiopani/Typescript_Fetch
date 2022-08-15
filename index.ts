@@ -28,3 +28,22 @@ const logTodo = (id:number,title:string,completed:boolean) => {
     title is: ${title}
     is completed?: ${completed}`)
 }
+
+//Anotations in objects
+const profile = {
+    name: 'alex',
+    age:20,
+    coords:{
+        lat: 0,
+        lng: 15
+    },
+    setAge(age: number): void{
+        this.age = age;        
+    }
+};
+
+const { age }: {age:number} = profile;
+
+const {coords: {lat, lng}} = profile;
+
+
